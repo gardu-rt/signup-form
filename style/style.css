@@ -1,0 +1,129 @@
+/*  General Style*/
+* {
+    box-sizing: border-box;
+}
+html, body, button, input {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    color: #1f1f1f;
+    margin: 0;
+}
+button, input {
+    display: block;
+    font-size: inherit;
+    max-width: 100%;
+}
+input {
+    outline: none;
+}
+
+/* Layout Stuff */
+.container {
+    display: flex;
+    height: 100vh;
+    gap: 50px;
+}
+
+/* Title layout */
+.title {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(/images/halie-west.jpg);
+    color: white;
+}
+.title > .title-text {
+    background-color: #1f1f1f9c;
+    padding: 32px;
+    margin-top: 100px;
+}
+.credit a[href] {
+    color: white;
+}
+
+/* Content Layout */
+.content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-info > p:last-child {
+    margin-top: 32px;
+}
+
+.signup-info {
+    font-weight: bold;
+    font-size: 20px;
+    width: 600px;
+}
+
+.form {
+    margin-top: 48px;
+    color: #3f3f3f;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 300px;
+    margin-bottom: 16px;
+    margin-right: 48px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+    transition: all 0.2s ease;
+}
+
+input:focus:invalid {
+    border-color: #ca3a3a;
+    box-shadow: 0 0 6px #ca3a3a;
+}
+
+input:focus:valid {
+    border-color: #285028;
+    box-shadow: 0 0 6px #285028;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+button {
+    margin-top: 32px;
+    padding: 10px 48px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #e4e4e4;
+    background-color: #285028;
+    box-shadow: 0 0 6px #3f3f3f;
+    cursor: pointer;
+}
+
+.form > p {
+    margin-top: 32px;
+    font-size: 18px;
+}
+
+.form a {
+    margin-left: 8px;
+    display: inline-block;
+    font-weight: 900;
+    text-decoration: none;
+    color: #285028;
+}
